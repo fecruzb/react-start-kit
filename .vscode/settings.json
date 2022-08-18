@@ -1,0 +1,31 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#061925",
+    "activityBar.foreground": "#d94158",
+    "activityBar.inactiveForeground": "#3D4C55",
+    "titleBar.activeBackground": "#831b2b",
+    "titleBar.activeForeground": "#FFFFFF",
+
+    "terminal.tab.activeBorder": "#d94158",
+    "statusBar.background": "#831b2b",
+    "panelTitle.activeForeground": "#d94158"
+  },
+  "workbench.startupEditor": "readme",
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.enablePersistentSessions": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "json.format.keepLines": true,
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.fontSize": 12,
+  "editor.lineHeight": 18,
+  "editor.insertSpaces": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.wordWrap": "off",
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "editor.minimap.renderCharacters": true,
+  "editor.renderControlCharacters": true
+}
