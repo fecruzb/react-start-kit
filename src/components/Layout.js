@@ -1,4 +1,4 @@
-import { styled } from "@mui/material";
+import { Box, styled } from "@mui/material";
 import Header from "./Header";
 import Page from "./Page";
 import Auth from "../modules/auth";
@@ -37,11 +37,11 @@ const Layout = ({ children }) => {
   }
 
   return (
-    <>
+    <Box bgcolor="grey.200" minHeight="100vh">
       <Header pages={pages} setUser={setUser} />
       <Page>{children}</Page>
       <Offset />
-    </>
+    </Box>
   );
 };
 

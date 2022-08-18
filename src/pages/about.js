@@ -2,7 +2,7 @@
 import { Typography, Box } from "@mui/material";
 
 const PageAbout = () => (
-  <Box>
+  <Box bgcolor="white" p={2}>
     <Typography variant="h4" paragraph>
       About
     </Typography>

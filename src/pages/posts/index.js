@@ -1,14 +1,14 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Post from "../../modules/post";
 
 const PagePosts = ({ posts }) => (
-  <>
+  <Box bgcolor="white" p={2}>
     <Typography variant="h4" paragraph>
       Posts
     </Typography>
 
     <Post.List list={posts} />
-  </>
+  </Box>
 );
 
 PagePosts.getInitialProps = async () => {

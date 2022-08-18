@@ -1,9 +1,10 @@
+import { Box } from "@mui/material";
 import Album from "../../modules/album";
 
 const PageAlbumView = ({ album }) => (
-  <>
+  <Box bgcolor="white" p={2}>
     <Album.View album={album} />
-  </>
+  </Box>
 );
 
 PageAlbumView.getInitialProps = async ({ query: { id } }) => {
