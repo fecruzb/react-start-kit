@@ -30,7 +30,11 @@ const pages = [
 ];
 
 const Layout = ({ children }) => {
-  const [user, setUser] = React.useState(null);
+  const [user, setUser] = React.useState({
+    id: 1,
+    name: "Felipe",
+    email: "dev@fcbueno.com",
+  });
 
   if (!user) {
     return <Auth.Login setUser={setUser} />;
