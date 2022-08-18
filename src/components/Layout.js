@@ -1,30 +1,20 @@
-import Link from "next/link";
+import { AppBar, Toolbar, Container, styled } from "@mui/material";
+import Header from "./Header";
+
+const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
 
 const Layout = ({ children }) => (
-  <div className="layout">
-    <div className="header">
-      <h1>Starter Kit</h1>
-    </div>
-
-    <div className="menu">
-      <ul>
-        <li>
-          <Link href="/">
-            <a>Home</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/posts">
-            <a>Posts</a>
-          </Link>
-        </li>
-      </ul>
-    </div>
-
-    <hr />
-
-    <div className="page">{children}</div>
-  </div>
+  <>
+    <AppBar position="static">
+      <Container>
+        <Toolbar disableGutters>
+          <Header />
+        </Toolbar>
+      </Container>
+    </AppBar>
+    <Container>{children}</Container>
+    <Offset />
+  </>
 );
 
 export default Layout;
