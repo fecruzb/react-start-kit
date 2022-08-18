@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev ./src",
     "build": "next build ./src",
-    "start": "next start ./src -p 8080",
+    "start": "next start ./src -- ${PORT-3000}",
     "lint": "next lint ./src"
   },
   "author": "",
