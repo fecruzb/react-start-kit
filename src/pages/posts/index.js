@@ -1,23 +1,23 @@
-import Link from "next/link";
+/* ui imports */
+import { Box, Typography } from "@mui/material";
+
+/* libraries imports */
 import api from "../../api";
 
+/* components imports */
+import PostList from "../../components/PostList";
+
+/* react component */
 const PagePosts = ({ posts }) => (
-  <div className="page-posts">
-    <h2>Posts</h2>
-    <div className="posts">
-      <ul>
-        {posts.map((post) => (
-          <li key={post.id}>
-            <Link href={`/posts/${post.id}`}>
-              <a>{post.title}</a>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </div>
+  <Box className="page-posts">
+    <Typography variant="h4" paragraph>
+      Posts
+    </Typography>
+    <PostList list={posts} />
+  </Box>
 );
 
+/* preload component props async */
 PagePosts.getInitialProps = async () => {
   const posts = await api.posts.list();
   return { posts };

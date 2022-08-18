@@ -1,19 +1,31 @@
-import AdbIcon from "@mui/icons-material/Adb";
+import React from "react";
+
+/* ui imports */
+import {
+  Typography,
+  Menu,
+  MenuItem,
+  Box,
+  IconButton,
+  Button,
+} from "@mui/material";
+
+/* icon imports */
 import MenuIcon from "@mui/icons-material/Menu";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import Typography from "@mui/material/Typography";
-import * as React from "react";
-import { useRouter } from "next/router";
+import AdbIcon from "@mui/icons-material/Adb";
+
+/* router imports */
 import Link from "next/link";
 
+/* array of pages -- used to display on menus */
 const pages = [
   {
     name: "Home",
     href: "/",
+  },
+  {
+    name: "About",
+    href: "/about",
   },
   {
     name: "Posts",
@@ -22,8 +34,6 @@ const pages = [
 ];
 
 const Header = () => {
-  const router = useRouter();
-
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
