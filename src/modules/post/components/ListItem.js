@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-const PostListItem = ({ item }) => (
+const PostListItem = ({ post }) => (
   <li>
-    <Link href={`/posts/${item.id}`}>
-      <a>{item.title}</a>
+    <Link href={`/posts/${post.id}`}>
+      <a>{post.title}</a>
     </Link>
   </li>
 );
