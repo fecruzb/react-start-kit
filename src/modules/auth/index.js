@@ -1,9 +1,9 @@
 import * as api from "./api";
 import * as components from "./components";
 
-const Post = {
+const Auth = {
   ...components,
   api,
 };
 
-export default Post;
+export default Auth;

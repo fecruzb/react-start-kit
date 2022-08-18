@@ -20,7 +20,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 /* router imports */
 import Link from "next/link";
 
-const Header = ({ pages }) => {
+const Header = ({ pages, setUser }) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -40,7 +40,6 @@ const Header = ({ pages }) => {
             variant="h6"
             noWrap
             component="a"
-            href="/"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -94,7 +93,6 @@ const Header = ({ pages }) => {
             variant="h5"
             noWrap
             component="a"
-            href=""
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
@@ -119,6 +117,14 @@ const Header = ({ pages }) => {
                 </Button>
               </Link>
             ))}
+          </Box>
+          <Box>
+            <Button
+              sx={{ my: 2, color: "white", display: "block" }}
+              onClick={() => setUser(null)}
+            >
+              Logout
+            </Button>
           </Box>
         </Toolbar>
       </Container>
