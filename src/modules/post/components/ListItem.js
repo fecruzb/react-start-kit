@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const PostItem = ({ item }) => (
+const PostListItem = ({ item }) => (
   <li>
     <Link href={`/posts/${item.id}`}>
       <a>{item.title}</a>
@@ -8,4 +8,4 @@ const PostItem = ({ item }) => (
   </li>
 );
 
-export default PostItem;
+export default PostListItem;

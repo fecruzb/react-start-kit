@@ -1,9 +1,9 @@
-import PostItem from "./PostItem";
+import PostListItem from "./ListItem";
 
 const PostList = ({ list }) => (
   <ul>
     {list.map((post) => (
-      <PostItem key={post.id} item={post} />
+      <PostListItem key={post.id} item={post} />
     ))}
   </ul>
 );

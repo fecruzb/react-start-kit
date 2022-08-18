@@ -1,23 +1,14 @@
-/* ui imports */
-import { Box, Typography } from "@mui/material";
+import Post from "../../modules/post";
 
-/* libraries imports */
-import api from "../../api";
-
-/* react component */
-const PagePost = ({ post }) => (
-  <Box className="page-post">
-    <Typography variant="h4" paragraph>
-      {post.title}
-    </Typography>
-    <Typography>{post.body}</Typography>
-  </Box>
+const PagePostView = ({ post }) => (
+  <>
+    <Post.View item={post} />
+  </>
 );
 
-/* preload component props async */
-PagePost.getInitialProps = async ({ query: { id } }) => {
-  const post = await api.posts.get(id);
+PagePostView.getInitialProps = async ({ query: { id } }) => {
+  const post = await Post.api.get(id);
   return { post };
 };
 
-export default PagePost;
+export default PagePostView;
