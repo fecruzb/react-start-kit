@@ -8,13 +8,10 @@ const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
 
 const pages = [
   {
-    name: "Home",
+    name: "Dashboard",
     href: "/",
   },
-  {
-    name: "About",
-    href: "/about",
-  },
+
   {
     name: "Posts",
     href: "/posts",
@@ -26,6 +23,10 @@ const pages = [
   {
     name: "Albums",
     href: "/albums",
+  },
+  {
+    name: "About",
+    href: "/about",
   },
 ];
 
