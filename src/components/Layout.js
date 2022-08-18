@@ -19,6 +19,14 @@ const pages = [
     name: "Posts",
     href: "/posts",
   },
+  {
+    name: "Users",
+    href: "/users",
+  },
+  {
+    name: "Albums",
+    href: "/albums",
+  },
 ];
 
 const Layout = ({ children }) => {

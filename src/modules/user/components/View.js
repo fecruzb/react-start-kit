@@ -1,14 +1,14 @@
 import { Typography } from "@mui/material";
 import Json from "../../../components/Json";
 
-const PostView = ({ post }) => (
+const UserView = ({ user }) => (
   <>
     <Typography variant="h4" paragraph>
-      {post.title}
+      {user.name}
     </Typography>
 
-    <Json data={post} />
+    <Json data={user} />
   </>
 );
 
-export default PostView;
+export default UserView;
