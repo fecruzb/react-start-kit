@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import Json from "../../../components/Json";
+import App from "@/app";
 
 const UserView = ({ user }) => (
   <>
@@ -7,7 +7,7 @@ const UserView = ({ user }) => (
       {user.name}
     </Typography>
 
-    <Json data={user} />
+    <App.Json data={user} />
   </>
 );
 

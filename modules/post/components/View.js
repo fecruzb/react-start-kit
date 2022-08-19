@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import Json from "../../../components/Json";
+import App from "@/app";
 
 const PostView = ({ post }) => (
   <>
@@ -7,7 +7,7 @@ const PostView = ({ post }) => (
       {post.title}
     </Typography>
 
-    <Json data={post} />
+    <App.Json data={post} />
   </>
 );
 
