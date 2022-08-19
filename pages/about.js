@@ -1,4 +1,3 @@
-/* ui imports */
 import { Typography, Box } from "@mui/material";
 
 const PageAbout = () => (

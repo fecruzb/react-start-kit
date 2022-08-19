@@ -1,9 +1,11 @@
+import React from "react";
 import { Box, styled } from "@mui/material";
+
 import Header from "./Header";
 import Page from "./Page";
-import Auth from "../modules/auth";
-import React from "react";
 import Store from "./Store";
+
+import Auth from "@/auth";
 
 const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
 

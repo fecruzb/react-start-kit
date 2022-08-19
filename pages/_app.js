@@ -5,25 +5,27 @@ import Head from "next/head";
 import * as React from "react";
 
 import { emotionCache, theme } from "@/config";
-import { Layout, Store } from "@/components";
+import App from "@/app";
 
 const clientSideEmotionCache = emotionCache();
 
-export default function MyApp(props) {
+const NextApp = (props) => {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
   return (
     <CacheProvider value={emotionCache}>
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
-      <Store>
+      <App.Store>
         <ThemeProvider theme={theme}>
           <CssBaseline />
-          <Layout>
+          <App.Layout>
             <Component {...pageProps} />
-          </Layout>
+          </App.Layout>
         </ThemeProvider>
-      </Store>
+      </App.Store>
     </CacheProvider>
   );
-}
+};
+
+export default NextApp;

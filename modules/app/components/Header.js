@@ -1,23 +1,20 @@
 import React from "react";
 
-/* ui imports */
 import {
-  Typography,
+  AppBar,
+  Box,
+  Button,
+  Container,
+  IconButton,
   Menu,
   MenuItem,
-  Box,
-  IconButton,
-  Button,
-  AppBar,
-  Container,
   Toolbar,
+  Typography,
 } from "@mui/material";
 
-/* icon imports */
-import MenuIcon from "@mui/icons-material/Menu";
 import AdbIcon from "@mui/icons-material/Adb";
+import MenuIcon from "@mui/icons-material/Menu";
 
-/* router imports */
 import Link from "next/link";
 
 import Store from "./Store";

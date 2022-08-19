@@ -2,8 +2,8 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@/components": ["components"],
       "@/config": ["config"],
+      "@/app": ["modules/app"],
       "@/auth": ["modules/auth"],
       "@/album": ["modules/album"],
       "@/dashboard": ["modules/dashboard"],

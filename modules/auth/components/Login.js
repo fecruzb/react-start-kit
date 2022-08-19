@@ -3,7 +3,7 @@ import { useFormik } from "formik";
 import * as yup from "yup";
 import * as api from "../api";
 import React, { useContext } from "react";
-import { Store } from "@/components";
+import { Store } from "@/app";
 
 const validationSchema = yup.object({
   email: yup

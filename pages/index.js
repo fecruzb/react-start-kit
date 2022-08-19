@@ -1,5 +1,4 @@
-/* ui imports */
-import { Typography, Box, Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import Dashboard from "../modules/dashboard";
 
 const PageHome = () => (
