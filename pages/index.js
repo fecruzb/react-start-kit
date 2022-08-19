@@ -1,5 +1,5 @@
 import { Box, Grid } from "@mui/material";
-import Dashboard from "../modules/dashboard";
+import Dashboard from "@/dashboard";
 
 const PageHome = () => (
   <Box>
