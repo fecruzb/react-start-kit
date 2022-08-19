@@ -3,7 +3,7 @@ import { useFormik } from "formik";
 import * as yup from "yup";
 import * as api from "../api";
 import React, { useContext } from "react";
-import App from "@/app";
+import Auth from "@/auth";
 
 const validationSchema = yup.object({
   email: yup
@@ -17,7 +17,7 @@ const validationSchema = yup.object({
 });
 
 const Login = () => {
-  const { setStore } = useContext(App.Store.Context);
+  const { setStore } = useContext(Auth.Store.Context);
   const formik = useFormik({
     initialValues: {
       email: "",

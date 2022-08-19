@@ -5,7 +5,9 @@ import Head from "next/head";
 import * as React from "react";
 
 import { emotionCache, theme } from "@/config";
+
 import App from "@/app";
+import Auth from "@/auth";
 
 const clientSideEmotionCache = emotionCache();
 
@@ -16,14 +18,14 @@ const NextApp = (props) => {
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
-      <App.Store>
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Auth.Store>
           <App.Layout>
             <Component {...pageProps} />
           </App.Layout>
-        </ThemeProvider>
-      </App.Store>
+        </Auth.Store>
+      </ThemeProvider>
     </CacheProvider>
   );
 };

@@ -3,8 +3,6 @@ import { Box, styled } from "@mui/material";
 
 import Header from "./Header";
 import Page from "./Page";
-import Store from "./Store";
-
 import Auth from "@/auth";
 
 const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
@@ -34,7 +32,7 @@ const pages = [
 ];
 
 const Layout = ({ children }) => {
-  const { store } = React.useContext(Store.Context);
+  const { store } = React.useContext(Auth.Store.Context);
 
   if (!store?.user) {
     return <Auth.Login />;

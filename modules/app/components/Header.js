@@ -16,11 +16,10 @@ import AdbIcon from "@mui/icons-material/Adb";
 import MenuIcon from "@mui/icons-material/Menu";
 
 import Link from "next/link";
-
-import Store from "./Store";
+import Auth from "@/auth";
 
 const Header = ({ pages }) => {
-  const { store, setStore } = React.useContext(Store.Context);
+  const { store, setStore } = React.useContext(Auth.Store.Context);
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
