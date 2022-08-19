@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev ./src",
-    "build": "next build ./src",
-    "start": "next start ./src -- ${PORT-3000}",
-    "lint": "next lint ./src"
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "http-server --port ${PORT-3000} ./out",
+    "lint": "next lint"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +18,7 @@
     "@mui/material": "^5.10.1",
     "@mui/x-data-grid": "^5.15.3",
     "formik": "^2.2.9",
+    "http-server": "^14.1.1",
     "next": "^12.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
